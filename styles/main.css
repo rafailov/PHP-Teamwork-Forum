@@ -1,0 +1,13 @@
+//Main styles here
+
+body, div {
+	margin: 0;
+	padding: 0;
+}
+
+#wrapper {
+	width: 70%;
+	height: 500px;
+	border: 1px solid black;
+	margin: 10px auto;
+}
