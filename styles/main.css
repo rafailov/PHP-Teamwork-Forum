@@ -1,6 +1,4 @@
-//Main styles here
-
-body, div {
+body, div, h4 {
 	margin: 0;
 	padding: 0;
 }
@@ -10,4 +8,22 @@ body, div {
 	height: 500px;
 	border: 1px solid black;
 	margin: 10px auto;
+}
+
+input, textarea {
+    display: block;
+}
+
+input[type='text'], textarea{
+    width: 350px;
+}
+
+textarea {
+    height: 200px;
+}
+
+.article {
+    width: 200px;
+    height: 50px;
+    border: 1px solid red;
 }
