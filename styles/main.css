@@ -1,21 +1,100 @@
-body, div, h4 {
+body,h1, div, h4 {
 	margin: 0;
 	padding: 0;
 }
 
+body {
+	background-color: gray;
+	font-family:Tahoma,Helvetica,sans-serif;
+}
+
+
+h1{
+height:100px;
+padding:10px;
+margin:0px 10px;
+border:1px solid black;
+border-radius:15px;
+background-color:#BCBCBC;
+color:white;
+}
+
+h1 a {
+	text-decoration:none;
+	color:white;
+	margin-left:400px;
+	font-size:50px;
+}
+
+h1 p {
+	font-size:20px;
+	margin-left:70px;
+}
+
+#registration, #login{
+	background-color:#BCBCBC;
+	border:1px solid black;
+	border-radius:10px;
+	margin-left:100px;
+	color:white;
+	font-style:bold;
+}
+form a {
+	text-decoration:none;
+}
+
+#registration {
+	width:150px;	
+}
+
+#login {
+	width:80px;
+}
+
+#login:hover, #registration:hover{
+	color:red;
+}
+
 #wrapper {
-	width: 70%;
-	height: 500px;
-	border: 1px solid black;
-	margin: 10px auto;
+	width: 80%;
+	height: 600px;
+	border: 1px solid gray;
+	margin: 70px auto 10px;
+	background-color:white;
+}
+
+footer {
+	border:1px solid black;
+	border-radius:10px;
+	background-color:#BCBCBC;
+	margin:0px 10px;
+	padding:10px;
+	padding-left:60px;
 }
 
 input, textarea {
+	width: 70%;
     display: block;
+	background-color: white;
+	border: 1px solid gray;
+	font-size: 15px;
+	padding: 10px;
+	margin: 10px auto;	
 }
 
-input[type='text'], textarea{
-    width: 350px;
+#title {
+	margin-top:30px;
+	font-size:20px;
+}
+
+#addNewTheme {
+	width:420px;
+	border-radius:10px;
+	background-color:#BCBCBC;	
+}
+
+#addNewTheme:hover{
+	color:red;
 }
 
 textarea {
@@ -23,7 +102,10 @@ textarea {
 }
 
 .article {
-    width: 200px;
-    height: 50px;
+    width: 70%;
+    height: 150px;
     border: 1px solid red;
+	margin: 20px auto 10px;
+	padding: 10px;
+	word-wrap:break-word;
 }
