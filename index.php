@@ -28,12 +28,14 @@
 				<?php
 				if(isset($_POST['title']) && isset($_POST['content'])){
 					$title = $_POST['title'];
-					"<br><br>";
 					$content = $_POST['content'];
 
 					echo "<div class=\"article\">";
-					echo "<h4>$title</h4>";
-					echo "<div>$content</div>";
+					echo "<h4>";
+					echo htmlentities($title);
+					echo "</h4>";
+					echo "<br>";
+					echo htmlentities($content);
 					echo "</div>";
 				}
 				?>

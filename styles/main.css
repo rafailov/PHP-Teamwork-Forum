@@ -41,6 +41,7 @@ h1 p {
 }
 form a {
 	text-decoration:none;
+	border:0px;
 }
 
 #registration {

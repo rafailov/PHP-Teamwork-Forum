@@ -13,6 +13,7 @@
 			<form action="" method="get">
 				Name:<input type="text" name="name"><br>
 				E-mail:<input type="text" name="email"><br>
+				Password:<input type="password" placeholder="Your Password" name="your-password"><br>
 				<input type="submit">
 			</form>
 			<?php
