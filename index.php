@@ -13,8 +13,8 @@
 				<a href="#"><img src="img/logo.jpg" name="logo" alt="logo"/>FORUM.BG</a><p>Welcome to Forum.BG</p>
 			</h1>
 			<form>
-				<a href="#forum-Registration.php"><input type="submit" value="registration" id="registration"></a>
-				<a href="#"><input type="submit" value="login" id="login"></a>
+				<div id="registration"><a href="forum-Registration.php" >registration</a></div>
+				<input type="submit" value="login" id="login">
 			</form>	
 		</header>
 		

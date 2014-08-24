@@ -2,3 +2,18 @@ body {
 	margin: 0;
 	padding: 0;
 }
+	
+body {
+	background-image:url('img\Logo_BULGARIA.png');
+	background-size:cover;
+}
+
+section {
+	width:50%;
+	margin:20px auto;
+	display:block;
+}
+
+#registration  a{
+	width:150px;
+}

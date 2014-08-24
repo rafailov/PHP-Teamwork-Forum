@@ -39,20 +39,26 @@ h1 p {
 	color:white;
 	font-style:bold;
 }
+
+#registration {
+	width:150px;
+	height:25px;
+	padding:15px;
+	margin-top:10px;
+}
+
 form a {
 	text-decoration:none;
 	border:0px;
-}
-
-#registration {
-	width:150px;	
+	width:150px;
+	color:white;
 }
 
 #login {
 	width:80px;
 }
 
-#login:hover, #registration:hover{
+#login:hover, #registration a:hover{
 	color:red;
 }
 
