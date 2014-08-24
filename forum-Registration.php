@@ -2,32 +2,36 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<tiltle>Team "Spike" - Forum-Registration</title>
+		<title>Team "Spike" - Forum-Registration</title>
 		<link rel="stylesheet" href="styles/forum-Registration.css">
 	</head>
 	<body>
 		<header>
-			<a href="index.php">forum</a>
+			<h1>
+				<a href="#"><img src="img/logo.jpg" name="logo" alt="logo"/>FORUM.BG</a>
+				<p>Welcome to Forum.BG</p>
+			</h1>
+			<div id="back"><a href="index.php">back</a></div>
 		</header>
 		<section>
+			<div id="section">
 			<form action="" method="post">
-				Name:<input type="text" name="name"><br>
-				E-mail:<input type="text" name="email"><br>
-				Password:<input type="password" placeholder="Your Password" name="your-password"><br>
-				<input type="submit" value="Submit">
+				<input type="text" name="name" placeholder="User-Name"><br>
+				<input type="text" name="email" placeholder="E-mail"><br>
+				<input type="password" placeholder="Password" name="your-password"><br>
+				<input type="submit" value="Submit" id="submit">
 			</form>
+			</div>
 			<?php
 			if(isset($_POST["name"])) {
+			echo "<div id=\"info\">";
+			echo "Welcome, " . htmlentities($_POST["name"]) ."<br>" . "Your email is:" . htmlentities($_POST["email"]) ."<br>" . "Click \"Continue\"";
+			echo "</div>";
+			}
 			?>
-			Welcome
-			<?php
-			echo htmlentities($_POST["name"]);
-			?><br>
-			Your email is:<?php echo htmlentities($_POST["email"]); ?>
-			<?php } ?>
 		</section>
 		<footer>
-		
+			<address>Bulgaria Sofia 1510 tel:+359 0888123456</address>
 		</footer>
 	</body>
 </html>

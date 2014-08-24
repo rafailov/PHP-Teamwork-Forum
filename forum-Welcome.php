@@ -28,7 +28,9 @@ die;
 			</form>				
 		</header>
 		<section>
-		
+			<div>
+			
+			</div>		
 		</section>
 		<footer>
 			<address>Bulgaria Sofia 1510 tel:+359 0888123456</address>

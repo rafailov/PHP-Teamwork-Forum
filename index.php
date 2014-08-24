@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8"/>
-		<title>Team "Spike" - Forum</title>
+		<title>Team "Spike"-Forum</title>
 		<script src="scripts/jquery-1.11.1.min.js"></script>
 		<script src="scripts/bootstrap.min.js"></script>
 		<link rel="stylesheet" href="styles/main.css">
@@ -14,7 +14,7 @@
 			</h1>
 			<form>
 				<div id="registration"><a href="forum-Registration.php">Registration</a></div>
-				<div id="login"><a href="forum-Login.php">Login</a></div>
+				<div id="registration"><a href="forum-Login.php">Login</a></div>
 			</form>	
 		</header>
 		

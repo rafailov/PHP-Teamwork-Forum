@@ -1,4 +1,43 @@
 body, div, h1 {
-	margin: 0;
-	padding: 0;
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	background-color: gray;
+	font-family:Tahoma,Helvetica,sans-serif;
+}
+
+h1{
+height:100px;
+padding:10px;
+margin:0px 10px;
+border:1px solid black;
+border-radius:15px;
+background-color:#BCBCBC;
+color:white;
+}
+
+h1 a {
+	text-decoration:none;
+	color:white;
+	margin-left:400px;
+	font-size:50px;
+}
+
+footer {
+	border:1px solid black;
+	border-radius:10px;
+	background-color:#BCBCBC;
+	margin:0px 10px;
+	padding:10px;
+	padding-left:60px;
+}
+
+div {
+	width: 70%;
+	height: 300px;
+	border: 1px solid gray;
+	margin: 160px auto 10px;
+	background-color:#BCBCBC;
 }

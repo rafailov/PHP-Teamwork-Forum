@@ -1,19 +1,94 @@
 body {
-	margin: 0;
-	padding: 0;
+	margin: 0px;
+	padding: 0px;
 }
 	
 body {
-	background-image:url('img\Logo_BULGARIA.png');
-	background-size:cover;
+	background-color: gray;
+	font-family:Tahoma,Helvetica,sans-serif;
 }
 
-section {
-	width:50%;
-	margin:20px auto;
-	display:block;
+h1{
+height:100px;
+padding:10px;
+margin:0px 10px;
+border:1px solid black;
+border-radius:15px;
+background-color:#BCBCBC;
+color:white;
 }
 
-#registration  a{
+h1 a {
+	text-decoration:none;
+	color:white;
+	margin-left:400px;
+	font-size:50px;
+}
+
+footer {
+	border:1px solid black;
+	border-radius:10px;
+	background-color:#BCBCBC;
+	margin:0px 10px;
+	padding:10px;
+	padding-left:60px;
+}
+
+#section {
+	width: 50%;
+	height: 300px;
+	border: 1px solid gray;
+	margin: 150px auto 40px;
+	background-color:#BCBCBC;
+}
+
+input {
+	width: 50%;
+    display: block;
+	background-color: white;
+	border: 1px solid gray;
+	border-radius: 10px;
+	font-size: 15px;
+	padding: 10px;
+	margin: 10px auto;
+	
+}
+
+#back {
 	width:150px;
+	height:25px;
+	padding:15px;
+	margin-top:10px;
+	background-color:#BCBCBC;
+	border:1px solid black;
+	border-radius:10px;
+	margin-left:100px;
+	color:white;
+	font-style:bold;
+	text-align:center;
+}
+
+#back a {
+	text-decoration:none;
+	color:white;
+	text-align:center;
+}
+
+#submit {
+	margin-top: 20px;
+}
+
+#submit:hover {
+	background-color:gray;
+	color:red;
+}
+
+#info {
+	width:25%;
+	height: 10%;
+	margin:10px auto;
+	text-align:center;
+	padding:10px;
+	font-size:20px;
+	color:red;
 }

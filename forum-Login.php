@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<link rel="stylesheet" href="styles/forum-Login.css">
-		<title>Forum-Login.php</title>
+		<title>Forum-Login</title>
 	</head>
 	
 	<body>
@@ -13,11 +13,13 @@
 			</h1>
 		</header>
 		<section>
+			<div>
 			<form method="post">
 				<input type="text" name="user" placeholder="User-name">
 				<input type="password" name="password" placeholder="Password">
-				<input type="submit" value="Submit">
+				<input type="submit" value="Submit" id="submit">
 			</form>
+			</div>
 		</section>
 
 <?php
@@ -25,13 +27,15 @@ If(isset($_POST['user'])) {
 $user = $_POST['user'];
 $password = $_POST['password'];
 //password must be verified 
-	//if($user == 'abv' && $password == '123') {
+	if($user == 'abv' && $password == '123') {
 	session_start();
 	$_SESSION['user'] = $user;
 	header("Location:forum-Welcome.php");
-	//} else {
-	//echo "Invalid user-name / password";
-	//}
+	} else {
+	echo "<div id=\"invalid\">";
+	echo "Invalid user-name / password";
+	echo "</div>";
+	}
 }
 ?>
 
