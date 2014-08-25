@@ -29,6 +29,9 @@
 			echo "</div>";
 			}
 			?>
+			<div id="continue">
+				<a href="forum-Login.php">Continue</a>
+			</div>
 		</section>
 		<footer>
 			<address>Bulgaria Sofia 1510 tel:+359 0888123456</address>

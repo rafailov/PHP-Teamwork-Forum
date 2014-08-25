@@ -63,8 +63,6 @@ input {
 	border:1px solid black;
 	border-radius:10px;
 	margin-left:100px;
-	color:white;
-	font-style:bold;
 	text-align:center;
 }
 
@@ -72,6 +70,23 @@ input {
 	text-decoration:none;
 	color:white;
 	text-align:center;
+}
+
+#continue {
+	width:150px;
+	height:25px;
+	margin:auto;
+	text-align:center;
+	padding:15px;
+	margin-top:10px;
+	background-color:#BCBCBC;
+	border:1px solid black;
+	border-radius:10px;	
+}
+
+#continue a {
+	color:white;
+	text-decoration:none;
 }
 
 #submit {
