@@ -41,3 +41,16 @@ div {
 	margin: 160px auto 10px;
 	background-color:#BCBCBC;
 }
+
+#logout {
+	width:150px;
+	height:25px;
+	padding:15px;
+	margin-top:10px;
+	background-color:#BCBCBC;
+	border:1px solid black;
+	border-radius:10px;
+	margin-left:100px;
+	color:white;
+	text-align:center;
+}

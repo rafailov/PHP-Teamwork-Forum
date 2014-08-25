@@ -24,7 +24,7 @@ die;
 				<p>Welcome to Forum.BG</p>
 			</h1>
 			<form action="forum-Logout.php">
-				<input type="submit" value="Logout">
+				<input type="submit" value="Logout" id="logout">
 			</form>				
 		</header>
 		<section>
@@ -35,7 +35,7 @@ die;
 		<footer>
 			<address>Bulgaria Sofia 1510 tel:+359 0888123456</address>
 			<form action="forum-Logout.php">
-				<input type="submit" value="Logout">
+				<input type="submit" value="Logout" id="logout">
 			</form>
 		</footer>
 	</body>
