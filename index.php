@@ -20,12 +20,6 @@
 		
 		<section>
 			<div id="wrapper">
-				<button>
-					<a href="forum-Login.php">Sing up</a>
-				</button>
-				<button>
-					<a href="forum-Registration.php">Register now</a>
-				</button>
 				<form method="post">
 				<input type="text" name="title" placeholder="Title" id="title">
 				<textarea name="content"></textarea>
