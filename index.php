@@ -34,11 +34,20 @@
 					echo "<h4>";
 					echo htmlentities($title);
 					echo "</h4>";
-					echo "<br>";
-					echo htmlentities($content);
+					echo "<span>" . htmlentities($content) . "</span>";
 					echo "</div>";
 				}
 				?>
+                <div class="article">
+                    <h4>Example title</h4>
+                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sed ultricies ipsum.
+                        Nullam id lacus eleifend, feugiat neque a, posuere turpis. Vestibulum et facilisis odio, ut ultricies sem.
+                        Proin id felis vel libero maximus pulvinar sit amet id quam. Fusce est diam, bibendum eget mauris quis,
+                        cursus lacinia arcu. Aliquam quis consequat est. Cras dui velit, tempus sed cursus sit amet, placerat at arcu.
+                        Morbi eget varius dui. Nam gravida ligula eu ligula ullamcorper, eget faucibus arcu porta. Vivamus vitae volutpat nulla.
+                        Phasellus ut consequat justo. Quisque in hendrerit nibh. Vestibulum sodales ornare metus id auctor.
+                        Sed nunc dui, cursus vel orci sed, finibus pellentesque libero. Duis vulputate ut elit in auctor.</span>
+                </div>
 			</div>
 		</section>
 		
