@@ -26,7 +26,7 @@
 				<input type="submit" value="Add new topic" id="addNewTheme">
 				</form>
 				<?php
-				if(isset($_POST['title']) && isset($_POST['content'])){
+				if(!empty($_POST['title']) && !empty($_POST['content'])){
 					$title = trim($_POST['title']);
 					$content = trim($_POST['content']);
                     $err='';

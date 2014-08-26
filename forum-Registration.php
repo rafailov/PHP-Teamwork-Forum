@@ -16,17 +16,14 @@
 		<section>
 			<div id="section">
 			<form action="" method="post">
-				<input type="text" name="name" placeholder="User-Name"><br>
-				<input type="text" name="email" placeholder="E-mail"><br>
-				<input type="password" placeholder="Password" name="your-password"><br>
+				<input type="text" name="name" placeholder="User-Name" autofocus="autofocus"><br>
+				<input type="password" placeholder="Password" required="required" name="password"><br>
 				<input type="submit" value="Submit" id="submit">
 			</form>
 			</div>
 			<?php
-			if(isset($_POST["name"])) {
-			echo "<div id=\"info\">";
-			echo "Welcome, " . htmlentities($_POST["name"]) ."<br>" . "Your email is:" . htmlentities($_POST["email"]) ."<br>" . "Click \"Continue\"";
-			echo "</div>";
+			if(!empty($_POST["name"]) && !empty($_POST["password"])) {
+
 			}
 			?>
 			<div id="continue">
