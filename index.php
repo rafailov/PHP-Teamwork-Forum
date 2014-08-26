@@ -27,6 +27,7 @@
 				</form>
 				<?php
 				if(!empty($_POST['title']) && !empty($_POST['content'])){
+					require_once 'Connection.php';
 					$title = trim($_POST['title']);
 					$content = trim($_POST['content']);
                     $err='';

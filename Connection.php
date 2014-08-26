@@ -7,9 +7,9 @@ class DatabaseConnect {
      */
     public function __construct() {
 
-        $db = new mysqli('localhost','', '', '');
+        $db = new mysqli('localhost','root', '', 'forum');
         if ($db->connect_errno) {
-            header('Location: '/*======== ERROR PAGE ==================*/ );
+            echo "Error DB Config";
             exit;
         } else {
             $this->_db = $db;
@@ -23,7 +23,7 @@ class DatabaseConnect {
         $this->_db->query('SET NAMES utf8');
         $query = $this->_db->query($sql);
         if (!$query) {
-            echo $this->_db->error;
+            echo 'connection.php : 26 '.$this->_db->error;
         } else {
             return $query;
         }
