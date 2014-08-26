@@ -9,7 +9,7 @@ class DatabaseConnect {
 
         $db = new mysqli('localhost','', '', '');
         if ($db->connect_errno) {
-            header('Location: errorPages' . DS . 'database.php');
+            header('Location: '/*======== ERROR PAGE ==================*/ );
             exit;
         } else {
             $this->_db = $db;
