@@ -15,8 +15,8 @@
 		<section>
 			<div>
 			<form method="post">
-				<input type="text" name="user" placeholder="User-name">
-				<input type="password" name="password" placeholder="Password">
+				<input type="text" name="user" placeholder="User-name" required="required" autofocus="autofocus">
+				<input type="password" name="password" placeholder="Password" required="required>
 				<input type="submit" value="Submit" id="submit">
 			</form>
 			</div>

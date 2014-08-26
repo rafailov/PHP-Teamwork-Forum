@@ -23,31 +23,40 @@
 				<form method="post">
 				<input type="text" name="title" placeholder="Title" id="title">
 				<textarea name="content"></textarea>
-				<input type="submit" value="Add new theme" id="addNewTheme">
+				<input type="submit" value="Add new topic" id="addNewTheme">
 				</form>
 				<?php
 				if(isset($_POST['title']) && isset($_POST['content'])){
-					$title = $_POST['title'];
-					$content = $_POST['content'];
-
-					echo "<div class=\"article\">";
-					echo "<h4>";
-					echo htmlentities($title);
-					echo "</h4>";
-					echo "<span>" . htmlentities($content) . "</span>";
-					echo "</div>";
-				}
+					$title = trim($_POST['title']);
+					$content = trim($_POST['content']);
+                    $err='';
+                    /*
+                     * if title lenght is < 5 symbols set error message
+                     */
+                    if (mb_strlen($title) < 5) {
+                        $err.=' Title is too short. ';
+                    }
+                    /*
+                     * if content lenght is < 5 symbols set error message
+                     */
+                    if (mb_strlen($content) < 5) {
+                        $err.=' Content is too short. ';
+                    }
+                    if(empty($err)){
+                        $db = new DatabaseConnect;
+                        $sql = "INSERT INTO  `forum`.`topics` (".
+                            "`topic_title` ,".
+                            "`topic_content` ,".
+                            "`topic_author_id` ,".
+                            "`topic_date`)".
+                            "VALUES (".
+                            "'" . $db->escape($title) . "',  '" . $db->escape($content) . "',  '".$_SESSION['author_id']."',  '" . date('y-m-d') . "');";
+                            /*$_SESSION['author_id'] - НЕ СЪДЪРЖА ВСЕ ОЩЕ ИД-ТО НА ПОТРЕБИТЕЛЯ КОЙТО ИСКА ДА ИМПОРТНЕ ТЕМА*/
+                        $query = $db->execute($sql);
+                    }
+                }
 				?>
-                <div class="article">
-                    <h4>Example title</h4>
-                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sed ultricies ipsum.
-                        Nullam id lacus eleifend, feugiat neque a, posuere turpis. Vestibulum et facilisis odio, ut ultricies sem.
-                        Proin id felis vel libero maximus pulvinar sit amet id quam. Fusce est diam, bibendum eget mauris quis,
-                        cursus lacinia arcu. Aliquam quis consequat est. Cras dui velit, tempus sed cursus sit amet, placerat at arcu.
-                        Morbi eget varius dui. Nam gravida ligula eu ligula ullamcorper, eget faucibus arcu porta. Vivamus vitae volutpat nulla.
-                        Phasellus ut consequat justo. Quisque in hendrerit nibh. Vestibulum sodales ornare metus id auctor.
-                        Sed nunc dui, cursus vel orci sed, finibus pellentesque libero. Duis vulputate ut elit in auctor.</span>
-                </div>
+
 			</div>
 		</section>
 		
