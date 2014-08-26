@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>How to power off the windows</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <div class="article">
+        <h4>How to erase everything</h4>
+        <div class="content">
+            First step: Go somewhere
+            Second step: Go there
+            Third step: choose something
+            There you go!
+        </div>
+        <button>Add comment</button>
+        <form method="post" style="display: none">
+            <textarea name="addComment"></textarea>
+            <input type="submit" value="Add comment">
+        </form>
+    </div>
+    <script>
+        var button = document.getElementsByTagName('button')[0];
+        button.addEventListener("click", function(){
+            var form = document.getElementsByTagName('form')[0];
+            form.parentNode.style.height = 'auto';
+            form.style.display = "block";
+        });
+    </script>
+</body>
+</html>
